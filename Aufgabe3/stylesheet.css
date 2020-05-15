@@ -1,0 +1,79 @@
+body{
+background-image: url(assets/bg.png);
+font-family: sans-serif;
+}
+nav{
+    position: sticky;
+    top: 0;
+    float: right;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(121, 157, 160, 0.753);
+    padding: 0;
+    margin-right: 0px;
+    border-radius: 5px;
+}
+.Navigation{
+    position: sticky;
+    color: white;
+    text-decoration: none;
+}
+a:link{
+    color: white;
+}
+a:visited{
+    color: #E3F6CE;
+}
+a:hover{
+    color: rgba(128, 165, 116, 0.822);    
+}
+a:active{
+    color: white;
+}
+#aktuell{
+    color: rgba(25, 53, 30, 0.5);
+}
+.ueberschrift{
+    font-size: 180px;
+    color: #E3F6CE;
+    letter-spacing: -10px;
+    font-weight: bolder;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.unterueberschrift{
+    font-size: 24pt;
+    color: #E3F6CE;
+    letter-spacing: -3px;
+    font-weight: bolder;
+    position: absolute;
+    top: 32%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.circle{
+    position: relative;
+    display: block;
+    margin-left: 270px;
+    margin-right: auto;
+    width: 60%;
+}
+
+img, video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+        width: 800px;
+}
+.Headline{
+    font-size: 30pt;
+    font-weight: bolder;
+    color: rgba(128, 165, 116, 0.822);
+    text-align-last: left;
+    margin-left: 22%;
+}
