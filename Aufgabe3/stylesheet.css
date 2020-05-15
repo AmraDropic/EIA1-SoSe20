@@ -40,7 +40,7 @@ a:active{
     letter-spacing: -10px;
     font-weight: bolder;
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -50,20 +50,11 @@ a:active{
     letter-spacing: -3px;
     font-weight: bolder;
     position: absolute;
-    top: 32%;
+    top: 21%;
     left: 65%;
     transform: translate(-50%, -50%);
     text-align: left;
 }
-
-.circle{
-    position: relative;
-    display: block;
-    margin-left: 270px;
-    margin-right: auto;
-    width: 60%;
-}
-
 img, video{
     display: block;
     margin-left: auto;
@@ -85,3 +76,23 @@ img, video{
 footer{
     text-align: center;
 }
+.Container .circle{
+    position: relative;
+    display: block;
+    top: -10px;
+    margin-left: 235px;;
+    margin-right: auto;
+    width: 65%;
+}
+#salam{
+    font-size: 14pt;
+    color: #E3F6CE;
+    letter-spacing: 0.6px;
+    font-weight: normal;
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    text-align: right;
+}
+#insta{
+    margin-block: 20px;
