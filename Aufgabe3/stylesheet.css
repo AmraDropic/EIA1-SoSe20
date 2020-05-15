@@ -77,3 +77,11 @@ img, video{
     text-align-last: left;
     margin-left: 22%;
 }
+.text{
+    display: inline-block;
+    margin-left: 310px;
+    font-size: 17pt;
+}
+footer{
+    text-align: center;
+}
