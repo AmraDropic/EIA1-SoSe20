@@ -70,8 +70,9 @@ img, video{
 }
 .text{
     display: inline-block;
-    margin-left: 310px;
-    font-size: 17pt;
+    margin-top: -50px;
+    margin-left: 320px;
+    font-size: 13pt;
 }
 footer{
     text-align: center;
