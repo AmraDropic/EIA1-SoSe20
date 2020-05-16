@@ -75,6 +75,7 @@ img, video{
 }
 footer{
     text-align: center;
+    font-size: 8pt;
 }
 .Container .circle{
     position: relative;
@@ -94,5 +95,44 @@ footer{
     left: 55%;
     text-align: right;
 }
-#insta{
-    margin-block: 20px;
+h2{
+    color: rgba(128, 165, 116, 0.822);
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 100px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.formular{
+    padding: 3px 4px 3px 6px;
+    color: whitesmoke;
+    background:#7ca597ab;
+    width: 250px;
+    margin: 7px 0px 7px 100px;
+    text-align: left;
+}
+.formular2 {
+    padding: 3px 4px 20px 6px;
+    color: whitesmoke;
+    background: #799e92b7;
+    width: 400px;
+    margin: 7px 0px 7px 100px;
+    text-align: left;
+}
+.formular3 {
+    padding: 3px 4px 3px 6px;
+    color: whitesmoke;
+    background: #799e92b7;
+    width: 100px;
+    margin: 30px 0px 100px 100px;
+    text-align: left;
+    }
+.unterformular{
+    padding: 3px 4px 20px 6px;
+    color: #7ca597ab;
+    width: 400px;
+    margin: 7px 0px 7px 100px;
+    text-align: left;
+}
