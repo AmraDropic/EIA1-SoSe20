@@ -21,7 +21,7 @@ body {
 
 
 
- #ueberschrift {
+ h1#ueberschrift {
     font-family: sans-serif;
     font-weight: 600;
     position: absolute;
@@ -30,22 +30,26 @@ body {
     font-size: 130pt;
     letter-spacing: -4px;
     color: #fffcf0fd;
+    
 
  }
 
- #unterueberschrift {
+
+
+ h2#unterueberschrift {
     position: absolute;
+    letter-spacing: -2px;
     font-family: sans-serif;
+    font-size: 30pt;
+    color: #fffcf0fd;
+    letter-spacing: -2px;
     font-weight: lighter;
     max-width: 800px;
     top: 140px;
     text-indent: 315px;
-    font-size: 30pt;
-    color: #fffcf0fd;
-    letter-spacing: -2px;
 }
 
-p{
+p#hallo{
     position: absolute;
     font-family: sans-serif;
     font-weight: lighter;
@@ -71,8 +75,6 @@ p{
     z-index: 1;
 }
 
-
-
 .navi{
     position: fixed;
     top: 0px;
@@ -91,7 +93,7 @@ a:link{
     text-decoration: none;
 }
 a:visited{
-    color: #E3F6CE;
+    color: #cbe0da;
     text-decoration: none;
 }
 a:hover{
@@ -99,7 +101,7 @@ a:hover{
     text-decoration: none;
 }
 a:active{
-    color: #fff9e2fd;
+    color: #f9fffefd;
     text-decoration: none;
 }
 #aktuell{
@@ -113,18 +115,18 @@ a:active{
     font-weight: 400;
     color: #799e96ec;
     text-align: left;
-    padding: 20px 20px 0px 20px;
+    margin-left: 5px;
 }
 
 #bilder{
     width: 800px;
-    padding: 20px;
+    margin-bottom: 30px;
     border-radius: 1cm;
 }
 
 video{
     width: 800px;
-    padding: 20px;
+    margin-bottom: 30px;
 }
 
 .headline2{
@@ -185,3 +187,13 @@ form{
 #sendebutton{
     background-color: #799e96ec;
 }
+
+footer{
+    position: fixed;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 8pt;
+    bottom: 0;
+    width: 800px;
+}
+    
