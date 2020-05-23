@@ -45,3 +45,9 @@ img{
     left: 373px;
     z-index: +2;
 }
+.ayran{
+    position: absolute;
+    top: 100px;
+    left: 450px;
+    z-index: +1;
+}
