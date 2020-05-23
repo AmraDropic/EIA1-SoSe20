@@ -1,0 +1,47 @@
+body{
+    background-image: url(assets/Thunnus_obesus.png);
+}
+
+div{
+    position: absolute;
+    max-width: 800px;
+    top: 25%;
+    left: 30%;
+    width: 600px;
+    height: 400px;
+    background-color: rgba(7, 7, 105, 0.918);
+    border-radius: 10px;
+
+}
+h1{
+    position: absolute;
+    top: 2px;
+    left: 50px;
+    font-family: sans-serif;
+    font-weight: 300;
+    color: white;
+}
+p{
+    position: absolute;
+    top: 20px;
+    left: 65%;
+    font-weight: 300;
+    font-size: 13pt;
+    color: white;
+    letter-spacing: 1px;
+}
+iframe{
+    position: absolute;
+    top: 18%;
+    left: 8%;
+    width: 500px;
+    height: 280px;
+
+}
+
+img{
+    position: absolute;
+    top: 278px;
+    left: 373px;
+    z-index: +2;
+}

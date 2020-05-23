@@ -1,0 +1,52 @@
+body{
+    background-image: url(assets/ocean.png);
+    max-width: 100%;
+    font-family: Helvetica;
+}
+.container{
+    background-image: url(assets/sand.png);
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+   
+    z-index: -2;
+}
+div>.palme{
+    position: absolute;
+    top: 140px;
+    left: 540px;
+}
+div>.palme2{
+    position: absolute;
+    top: 180px;
+    left: 420px;
+}
+
+div>.muschel{
+    position: absolute;
+    top: 280px;
+    left: -50px;
+}
+
+div>h1{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    font-size: 34pt;
+    color: seashell;
+    font-weight: 600;
+   
+}
+div>p{
+    position: relative;
+    display: block;
+    max-width: 440px;
+    top: 100px;
+    left: 20px;
+    font-weight: 200;
+    color: darkblue;
+    letter-spacing: 1px;
+}
+   

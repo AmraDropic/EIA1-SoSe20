@@ -1,0 +1,61 @@
+body{
+    background-image: url(assets/Minimalistic-Background.jpg);
+    max-width: 100%;
+}
+.container{
+    position: absolute;
+    max-width: 600px;
+    width: 600px;
+    height: 420px;
+    background-color: rgba(72, 80, 66, 0.842);
+    border-radius: 20px;
+    left: 30%;
+    top: 25%;
+}
+
+h1{
+    position: absolute;
+    left: 20px;
+    padding-bottom: 10px;
+    font-size: 20pt;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+form{
+    display: inline;
+    position: absolute;
+    left: 20px;
+    top: 60px;
+}
+
+input{
+    padding: 5px 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    
+}
+
+#greetings{
+
+    height: 90px;
+    width: 350px;
+    resize: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+    margin-top: 10px;
+    border-color: rgb(170, 164, 164);
+ }
+    
+label{
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 13pt;
+}
+h2{
+    position: relative;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 17pt;
+    margin-bottom: 5px;
+}
+

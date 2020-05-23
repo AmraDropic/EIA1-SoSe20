@@ -1,0 +1,57 @@
+body{
+     background-image: url(assets/minimal.jpg);
+}
+
+div{
+     position: absolute;
+     text-align: center;
+     width: 600px;
+     height: 400px;
+     top: 15%;
+     left: 29%;
+
+}
+h1{
+     text-align: center;
+     font-size: 50pt;
+     letter-spacing: 1px;
+     font-family: sans-serif;
+     font-weight: lighter;
+     color: rgba(135, 180, 93, 0.884);
+}
+
+nav{
+     text-align: center;
+}
+
+ul{
+     list-style-type: none;
+     margin: 5px;
+     padding: 5px;
+     color: black;
+}
+li{
+     display: inline;
+}
+
+.navi{
+     position: relative;
+     padding: 5px;
+     background-color: rgba(109, 139, 100, 0.678);
+     border-radius: 5px;
+}
+
+a{
+     text-decoration: none;
+     font-family: sans-serif;
+     color: white;
+}
+
+a:active{
+     color: rgb(67, 83, 60);
+}
+
+a:hover{
+     color: rgb(122, 155, 135);
+     background-color: rgba(230, 225, 225, 0.87);
+}
