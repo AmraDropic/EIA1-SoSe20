@@ -32,7 +32,8 @@ input{
     padding: 5px 5px;
     margin-top: 10px;
     border-radius: 5px;
-    
+    background-color: #9dad9dcc;
+    border-color: dimgrey;
 }
 
 #greetings{
@@ -43,7 +44,9 @@ input{
     border-radius: 5px;
     padding: 5px 5px;
     margin-top: 10px;
-    border-color: rgb(170, 164, 164);
+    border-color: rgba(24, 23, 23, 0.829);
+    border-width: 2px;
+    background-color: #9dad9dcc;
  }
     
 label{
