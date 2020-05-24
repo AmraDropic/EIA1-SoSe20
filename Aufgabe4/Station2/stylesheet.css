@@ -6,12 +6,12 @@ body{
 }
 
 div{
-    background-image: url(assets/beach-rep.png);
-    width: 600px;
-    height: 400px;
+    background-image: url(assets/beach.png);
+    width: 800px;
+    height: 479px;
     position: absolute;
     top: 10%;
-    left: 30%;
+    left: 24%;
     z-index: -2;
 }
 div > .muschel1{
@@ -19,8 +19,8 @@ div > .muschel1{
     width: 70px;
     height: 64px;
     position: absolute;
-    top: 320px;
-    left: 50px;
+    top: 400px;
+    left: 130px;
 }
 
 div > .muschel2{
@@ -29,8 +29,8 @@ div > .muschel2{
     height: 64px;
     position: absolute;
     display: block;
-    top: 270px;
-    left: 250px;
+    top: 400px;
+    left: 370px;
 }
 
 div > .muschel3{
@@ -39,8 +39,8 @@ div > .muschel3{
     height: 64px;
     position: absolute;
     display: block;
-    top: 310px;
-    left: 430px;
+    top: 400px;
+    left: 610px;
 }
 
 a:hover{
