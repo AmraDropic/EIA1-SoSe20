@@ -111,7 +111,7 @@ window.addEventListener("load", function(){
 
 function northamericaactive() {
     
-    document.querySelector(".chart")?.setAttribute("style", "heigth:" + na18zurwelt + "px");
+    document.querySelector(".chart")?.setAttribute("style", "height:" + na18zurwelt + "px");
 
     document.querySelector("#titleRegion").innerHTML = "Carbon Dioxide Emissions in Northamerica";
 
@@ -130,7 +130,7 @@ window.addEventListener("load", function(){
 
 function southamericaactive(){
 
-    document.querySelector(".chart")?.setAttribute("style", "heigth:" + sa18zurwelt + "px");
+    document.querySelector(".chart")?.setAttribute("style", "height:" + sa18zurwelt + "px");
 
     document.querySelector("#titleRegion").innerHTML = "Carbon Dioxide Emissions in Southamerica";
 
@@ -149,7 +149,7 @@ window.addEventListener("load", function(){
 
 function africaactive(){
 
-    document.querySelector(".chart")?.setAttribute("style", "heigth:" + af18zurwelt + "px");
+    document.querySelector(".chart")?.setAttribute("style", "height:" + af18zurwelt + "px");
 
     document.querySelector("#titleRegion").innerHTML = "Carbon Dioxide Emissions in Africa";
 
@@ -168,7 +168,8 @@ window.addEventListener("load", function(){
 
 function asiaactive(){
 
-    document.querySelector(".chart")?.setAttribute("style", "heigth:" + as18zurwelt + "px");
+    document.querySelector(".chart")?.setAttribute("style", "height:" + as18zurwelt + "px");
+
 
     document.querySelector("#titleRegion").innerHTML = "Carbon Dioxide Emissions in Asia";
 
@@ -180,6 +181,8 @@ function asiaactive(){
     document.querySelector("#text3").innerHTML = "Growth rate between 2008 and 2018 (in %)";
     document.querySelector("#headline4").innerHTML = as0818k + " CO2";
     document.querySelector("#text4").innerHTML = "Growth rate between 2008 and 2018 (absolute)";
+
+   
 }
 window.addEventListener("load", function(){
     document.querySelector(".asia").addEventListener("click", asiaactive);
@@ -187,7 +190,7 @@ window.addEventListener("load", function(){
 
 function australiaactive(){
 
-    document.querySelector(".chart")?.setAttribute("style", "heigth:" + au18zurwelt + "px");
+    document.querySelector(".chart")?.setAttribute("style", "height:" + au18zurwelt + "px");
 
     document.querySelector("#titleRegion").innerHTML = "Carbon Dioxide Emissions in Australia";
 
