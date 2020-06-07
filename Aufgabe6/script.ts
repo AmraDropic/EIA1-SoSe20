@@ -97,11 +97,11 @@ function europeactive() {
 
     document.querySelector("#headline1").innerHTML = eu18 + "kg CO2";
     document.querySelector("#text1").innerHTML = "Emission absolute of Europe in 2018";
-    document.querySelector("#headline2").innerHTML = eu18zurwelt + "%";
+    document.querySelector("#headline2").innerHTML = eu18zurwelt + " % ";
     document.querySelector("#text2").innerHTML = "Relative to total world's emission";
-    document.querySelector("#headline3").innerHTML = eu0818f + "%";
+    document.querySelector("#headline3").innerHTML = eu0818f + " % ";
     document.querySelector("#text3").innerHTML = "Growth rate between 2008 and 2018 (in %)";
-    document.querySelector("#headline4").innerHTML = eu0818k + "CO2";
+    document.querySelector("#headline4").innerHTML = eu0818k + " CO2";
     document.querySelector("#text4").innerHTML = "Growth rate between 2008 and 2018 (absolute)";
 }
 window.addEventListener("load", function(){
@@ -117,11 +117,11 @@ function northamericaactive() {
 
     document.querySelector("#headline1").innerHTML = na18 + "kg CO2";
     document.querySelector("#text1").innerHTML = "Emission absolute of Northamerica in 2018";
-    document.querySelector("#headline2").innerHTML = na18zurwelt + "%";
+    document.querySelector("#headline2").innerHTML = na18zurwelt + " % ";
     document.querySelector("#text2").innerHTML = "Relative to total world's emission";
-    document.querySelector("#headline3").innerHTML = na0818f + "%";
+    document.querySelector("#headline3").innerHTML = na0818f + " % ";
     document.querySelector("#text3").innerHTML = "Growth rate between 2008 and 2018 (in %)";
-    document.querySelector("#headline4").innerHTML = na0818k + "CO2";
+    document.querySelector("#headline4").innerHTML = na0818k + " CO2";
     document.querySelector("#text4").innerHTML = "Growth rate between 2008 and 2018 (absolute)";
 }
 window.addEventListener("load", function(){
@@ -136,11 +136,11 @@ function southamericaactive(){
 
     document.querySelector("#headline1").innerHTML = sa18 + "kg CO2";
     document.querySelector("#text1").innerHTML = "Emission absolute of Southamerica in 2018";
-    document.querySelector("#headline2").innerHTML = sa18zurwelt + "%";
+    document.querySelector("#headline2").innerHTML = sa18zurwelt + " % ";
     document.querySelector("#text2").innerHTML = "Relative to total world's emission";
-    document.querySelector("#headline3").innerHTML = sa0818f + "%";
+    document.querySelector("#headline3").innerHTML = sa0818f + " % ";
     document.querySelector("#text3").innerHTML = "Growth rate between 2008 and 2018 (in %)";
-    document.querySelector("#headline4").innerHTML = sa0818k + "CO2";
+    document.querySelector("#headline4").innerHTML = sa0818k + " CO2";
     document.querySelector("#text4").innerHTML = "Growth rate between 2008 and 2018 (absolute)";
 }
 window.addEventListener("load", function(){
@@ -155,11 +155,11 @@ function africaactive(){
 
     document.querySelector("#headline1").innerHTML = af18 + "kg CO2";
     document.querySelector("#text1").innerHTML = "Emission absolute of Africa in 2018";
-    document.querySelector("#headline2").innerHTML = af18zurwelt + "%";
+    document.querySelector("#headline2").innerHTML = af18zurwelt + " % ";
     document.querySelector("#text2").innerHTML = "Relative to total world's emission";
-    document.querySelector("#headline3").innerHTML = af0818f + "%";
+    document.querySelector("#headline3").innerHTML = af0818f + " % ";
     document.querySelector("#text3").innerHTML = "Growth rate between 2008 and 2018 (in %)";
-    document.querySelector("#headline4").innerHTML = af0818k + "CO2";
+    document.querySelector("#headline4").innerHTML = af0818k + " CO2";
     document.querySelector("#text4").innerHTML = "Growth rate between 2008 and 2018 (absolute)";
 }
 window.addEventListener("load", function(){
@@ -174,11 +174,11 @@ function asiaactive(){
 
     document.querySelector("#headline1").innerHTML = as18 + "kg CO2";
     document.querySelector("#text1").innerHTML = "Emission absolute of Asia in 2018";
-    document.querySelector("#headline2").innerHTML = as18zurwelt + "%";
+    document.querySelector("#headline2").innerHTML = as18zurwelt + " % ";
     document.querySelector("#text2").innerHTML = "Relative to total world's emission";
-    document.querySelector("#headline3").innerHTML = as0818f + "%";
+    document.querySelector("#headline3").innerHTML = as0818f + " % ";
     document.querySelector("#text3").innerHTML = "Growth rate between 2008 and 2018 (in %)";
-    document.querySelector("#headline4").innerHTML = as0818k + "CO2";
+    document.querySelector("#headline4").innerHTML = as0818k + " CO2";
     document.querySelector("#text4").innerHTML = "Growth rate between 2008 and 2018 (absolute)";
 }
 window.addEventListener("load", function(){
@@ -193,11 +193,11 @@ function australiaactive(){
 
     document.querySelector("#headline1").innerHTML = au18 + "kg CO2";
     document.querySelector("#text1").innerHTML = "Emission absolute of Australia in 2018";
-    document.querySelector("#headline2").innerHTML = au18zurwelt + "%";
+    document.querySelector("#headline2").innerHTML = au18zurwelt + " % ";
     document.querySelector("#text2").innerHTML = "Relative to total world's emission";
-    document.querySelector("#headline3").innerHTML = au0818f + "%";
+    document.querySelector("#headline3").innerHTML = au0818f + " % ";
     document.querySelector("#text3").innerHTML = "Growth rate between 2008 and 2018 (in %)";
-    document.querySelector("#headline4").innerHTML = au0818k + "CO2";
+    document.querySelector("#headline4").innerHTML = au0818k + " CO2";
     document.querySelector("#text4").innerHTML = "Growth rate between 2008 and 2018 (absolute)";
 }
 window.addEventListener("load", function() {
