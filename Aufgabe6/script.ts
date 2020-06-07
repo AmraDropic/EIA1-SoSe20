@@ -93,7 +93,7 @@ function europeactive() {
 
     document.querySelector(".chart")?.setAttribute("style", "height:" + eu18zurwelt + "px");
 
-    document.querySelector("#titleRegion").innerHTML = "Europe";
+    document.querySelector("#titleRegion").innerHTML = "Carbon Dioxide Emissions in Europe";
 
     document.querySelector("#headline1").innerHTML = eu18 + "kg CO2";
     document.querySelector("#text1").innerHTML = "Emission absolute of Europe in 2018";
@@ -113,7 +113,7 @@ function northamericaactive() {
     
     document.querySelector(".chart")?.setAttribute("style", "heigth:" + na18zurwelt + "px");
 
-    document.querySelector("#titleRegion").innerHTML = "Northamerica";
+    document.querySelector("#titleRegion").innerHTML = "Carbon Dioxide Emissions in Northamerica";
 
     document.querySelector("#headline1").innerHTML = na18 + "kg CO2";
     document.querySelector("#text1").innerHTML = "Emission absolute of Northamerica in 2018";
@@ -132,7 +132,7 @@ function southamericaactive(){
 
     document.querySelector(".chart")?.setAttribute("style", "heigth:" + sa18zurwelt + "px");
 
-    document.querySelector("#titleRegion").innerHTML = "Southamerica";
+    document.querySelector("#titleRegion").innerHTML = "Carbon Dioxide Emissions in Southamerica";
 
     document.querySelector("#headline1").innerHTML = sa18 + "kg CO2";
     document.querySelector("#text1").innerHTML = "Emission absolute of Southamerica in 2018";
@@ -151,7 +151,7 @@ function africaactive(){
 
     document.querySelector(".chart")?.setAttribute("style", "heigth:" + af18zurwelt + "px");
 
-    document.querySelector("#titleRegion").innerHTML = "Africa";
+    document.querySelector("#titleRegion").innerHTML = "Carbon Dioxide Emissions in Africa";
 
     document.querySelector("#headline1").innerHTML = af18 + "kg CO2";
     document.querySelector("#text1").innerHTML = "Emission absolute of Africa in 2018";
@@ -170,7 +170,7 @@ function asiaactive(){
 
     document.querySelector(".chart")?.setAttribute("style", "heigth:" + as18zurwelt + "px");
 
-    document.querySelector("#titleRegion").innerHTML = "Asia";
+    document.querySelector("#titleRegion").innerHTML = "Carbon Dioxide Emissions in Asia";
 
     document.querySelector("#headline1").innerHTML = as18 + "kg CO2";
     document.querySelector("#text1").innerHTML = "Emission absolute of Asia in 2018";
@@ -189,7 +189,7 @@ function australiaactive(){
 
     document.querySelector(".chart")?.setAttribute("style", "heigth:" + au18zurwelt + "px");
 
-    document.querySelector("#titleRegion").innerHTML = "Australia";
+    document.querySelector("#titleRegion").innerHTML = "Carbon Dioxide Emissions in Australia";
 
     document.querySelector("#headline1").innerHTML = au18 + "kg CO2";
     document.querySelector("#text1").innerHTML = "Emission absolute of Australia in 2018";
