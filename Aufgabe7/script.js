@@ -44,4 +44,5 @@ function beat() {
 window.addEventListener("load", function () {
     document.querySelector("img").addEventListener("click", beat);
 });
+//Vorgabe Herr Rausch
 //# sourceMappingURL=script.js.map
