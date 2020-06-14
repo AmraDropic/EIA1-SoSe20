@@ -1,11 +1,11 @@
 //Aufgabe 7.1 - Drum Pad
 
-function playsample(mp3: string) {
+function playsample(audio: string) {
     
-    var sound: HTMLAudioElement = new Audio("assets/" + mp3);
+    var sound: HTMLAudioElement = new Audio(audio);
     sound.play();
 }
-//Für Variablen Deklaration inspiriert von Jasmin Basler
+
 
 window.addEventListener("load", function () {
 

@@ -1,10 +1,9 @@
 "use strict";
 //Aufgabe 7.1 - Drum Pad
-function playsample(mp3) {
-    var sound = new Audio("assets/" + mp3);
+function playsample(audio) {
+    var sound = new Audio(audio);
     sound.play();
 }
-//Für Variablen Deklaration inspiriert von Jasmin Basler
 window.addEventListener("load", function () {
     document.querySelector(".first").addEventListener("click", function () {
         playsample("hihat.mp3");
