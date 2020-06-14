@@ -1,0 +1,44 @@
+
+body {
+    background-color: #272727;
+    max-width: 800px;
+}
+div {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -250px;
+    
+}
+button{
+    height: 150px;
+    width: 150px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    margin-left: 2px;
+    border: none;
+    
+    
+}
+img{
+    position: relative;
+    left: 155px;
+}
+.first, .second, .third{
+    background: linear-gradient(to bottom right, #2b96fa, #004aeb);
+    
+}
+
+.forth, .fifth, .sixth, .seventh{
+    background: linear-gradient(to bottom, #ff61dd, #ff00bf);
+  
+}
+
+.eighth, .nineth{
+    background: linear-gradient(to bottom, #ffb35d, #ff8800);
+    
+}
+

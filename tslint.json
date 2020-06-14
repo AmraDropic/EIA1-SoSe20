@@ -43,7 +43,7 @@
 		"semicolon": true,
 		"switch-default": false,
 		"triple-equals": [false, "allow-null-check"],
-		"typedef": [true, "call-signature", "parameter", "property-declaration", "variable-declaration", "member-variable-declaration"],
+		"typedef": [false, "call-signature", "parameter", "property-declaration", "variable-declaration", "member-variable-declaration"],
 		"typedef-whitespace": [true, {
 				"call-signature": "nospace",
 				"index-signature": "nospace",
