@@ -4,7 +4,7 @@ function playsample(mp3) {
     var sound = new Audio("assets/" + mp3);
     sound.play();
 }
-//Für Variablen Deklaration inspiriert durch Jasmin Basler
+//Für Variablen Deklaration inspiriert von Jasmin Basler
 window.addEventListener("load", function () {
     document.querySelector(".first").addEventListener("click", function () {
         playsample("hihat.mp3");

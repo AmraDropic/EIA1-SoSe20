@@ -5,7 +5,7 @@ function playsample(mp3: string) {
     var sound: HTMLAudioElement = new Audio("assets/" + mp3);
     sound.play();
 }
-//Für Variablen Deklaration inspiriert durch Jasmin Basler
+//Für Variablen Deklaration inspiriert von Jasmin Basler
 
 window.addEventListener("load", function () {
 
