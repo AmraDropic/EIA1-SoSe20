@@ -1,38 +1,31 @@
 "use strict";
-//Aufgabe 7.1 - Drum Pad
 var array = ["hihat.mp3", "kick.mp3", "snare.mp3"];
 var index = 0;
 var aufnahme = false;
-function playsamples(audio) {
-    var sound = new Audio(audio);
+function playsample(audio) {
+    const sound = new Audio(audio);
     sound.play();
+    // Wenn var aufnamhe = true, soll Audiodatei in Array gepusht werden
     if (aufnahme) {
         array.push(audio);
+        sound.play();
     }
 }
-function beat() {
-    setInterval(function () {
-        playsamples(array[index]);
-        index++;
-        if (index > 2) {
-            index = 0;
-        }
-    }, 500);
-    var playpauseicon = document.querySelector(".fas fa-play");
-    if (playpauseicon.className == "fas fa-play") {
-        playpauseicon.className = "fas fa-pause";
+// Wenn Class = fas fa-play, soll Funtkion "beat" ausgeführt werden; 
+// wenn Class = fas fa-stop, soll Beat gelöscht werden
+function playpause() {
+    var playpauseicon = document.querySelector("#play");
+    if (playpauseicon.getAttribute("class") == "fas fa-play") {
+        playpauseicon.setAttribute("class", "fas fa-pause");
         beat();
     }
     else if (playpauseicon.className == "fas fa-pause") {
         playpauseicon.className = "fas fa-play";
+        deleteBeat();
     }
 }
-window.addEventListener("load", function () {
-    document.querySelector(".fas fa-play").addEventListener("click", beat);
-    document.querySelector(".fas fa-microphone").addEventListener("click", record);
-    document.querySelector(".fas fa-trash-alt").addEventListener("click", deletebeat);
-});
-function record() {
+// Zustand der Variable "aufnahme" true/flase ändern
+function recordbeat() {
     if (aufnahme == false) {
         aufnahme = true;
         array = [];
@@ -41,36 +34,52 @@ function record() {
         aufnahme = false;
     }
 }
-function deletebeat() {
-    array = [];
+// Beat soll gelöscht werden
+function deleteBeat() {
+    clearInterval(index);
+}
+// Beat soll als Loop gespielt werden
+function beat() {
+    setInterval(function () {
+        playsample(array[index]);
+        index++;
+        if (index > 2) {
+            index = 0;
+        }
+    }, 500);
 }
 window.addEventListener("load", function () {
+    //Play-, Stop-, Aufnahme-, Deletebutton
+    document.querySelector("#play").addEventListener("click", beat);
+    document.querySelector("#micro").addEventListener("click", recordbeat);
+    document.querySelector("#trash").addEventListener("click", deleteBeat);
+    // DrumPad
     document.querySelector("#first").addEventListener("click", function () {
-        playsamples("hihat.mp3");
+        playsample("hihat.mp3");
     });
     document.querySelector("#second").addEventListener("click", function () {
-        playsamples("kick.mp3");
+        playsample("kick.mp3");
     });
     document.querySelector("#third").addEventListener("click", function () {
-        playsamples("snare.mp3");
+        playsample("snare.mp3");
     });
     document.querySelector("#forth").addEventListener("click", function () {
-        playsamples("A.mp3");
+        playsample("A.mp3");
     });
     document.querySelector("#fifth").addEventListener("click", function () {
-        playsamples("C.mp3");
+        playsample("C.mp3");
     });
     document.querySelector("#sixth").addEventListener("click", function () {
-        playsamples("F.mp3");
+        playsample("F.mp3");
     });
     document.querySelector("#seventh").addEventListener("click", function () {
-        playsamples("G.mp3");
+        playsample("G.mp3");
     });
     document.querySelector("#eighth").addEventListener("click", function () {
-        playsamples("laugh-2.mp3");
+        playsample("laugh-2.mp3");
     });
     document.querySelector("#nineth").addEventListener("click", function () {
-        playsamples("laugh-1.mp3");
+        playsample("laugh-1.mp3");
     });
 });
 //# sourceMappingURL=script.js.map

@@ -42,3 +42,10 @@ a {
     
 }
 
+#play, #micro, #trash {
+    text-align: center;
+    font-size: 70px; 
+    margin: 5px;
+    cursor: pointer;
+
+}
