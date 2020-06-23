@@ -47,5 +47,12 @@ a {
     font-size: 70px; 
     margin: 5px;
     cursor: pointer;
+    position: relative;
+    left: 120px;
+    margin: 10px;
+    color: plum;
+
+    
+
 
 }

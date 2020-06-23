@@ -1,5 +1,5 @@
 
-var array: string [] = ["hihat.mp3", "kick.mp3", "snare.mp3"];
+var array: string [] = [];
 var index: number = 0;
 var aufnahme: boolean = false;
 
@@ -57,7 +57,7 @@ function beat() {
     setInterval(function() {
         playsample(array[index]);
         index ++;
-        if (index > 2) {
+        if (index > array.length) {
             index = 0;
         }
         },      500);
@@ -68,6 +68,8 @@ window.addEventListener("load", function () {
 
     //Play-, Stop-, Aufnahme-, Deletebutton
     document.querySelector("#play").addEventListener("click", beat);
+
+    document.querySelector(".fas fa-pause").addEventListener("click", playpause);
 
     document.querySelector("#micro").addEventListener("click", recordbeat );
 
