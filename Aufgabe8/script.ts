@@ -1,7 +1,7 @@
 
 //Inspiriert von Coleen und Jasmin
 
-window.addEventListener('load', function () {
+window.addEventListener("load", function () {
 
     document.querySelector("#first").addEventListener("click", function () { playSample("A.mp3"); });
     document.querySelector("#second").addEventListener("click", function () { playSample("C.mp3"); });
@@ -16,14 +16,14 @@ window.addEventListener('load', function () {
 
 
     var arraybeat: string[] = ["kick.mp3", "snare.mp3", "hihat.mp3"];
- 
+
 
 
 
 
     var aufnahmebutton: boolean = false;
 
-//Aufnahmefunktion ein oder aus
+    //Aufnahmefunktion ein oder aus
     function recording(): void {
         if (aufnahmebutton) {
             aufnahmebutton = false;
@@ -39,7 +39,7 @@ window.addEventListener('load', function () {
 
 
 
-//Abspeichern der sounds
+    //Abspeichern der sounds
     function playSample(audio: string): void {
         if (aufnahmebutton) {
             arraybeat.push(audio);
@@ -49,7 +49,7 @@ window.addEventListener('load', function () {
     }
 
 
-//Abspielen bzw Stoppen des beats
+    //Abspielen bzw Stoppen des beats
     function playpause(): void {
         var psbutton: HTMLElement = document.querySelector("#play");
         if (psbutton.getAttribute("class") == "fas fa-play") {
@@ -65,11 +65,11 @@ window.addEventListener('load', function () {
 
 
     var index: number = 0;
-  
-  
+
+
     var beatInt: number;
 
-//Loop-Funktion
+    //Loop-Funktion
     function abspielButton() {
         beatInt = setInterval(function () {
             playSample(arraybeat[index]);
@@ -77,10 +77,10 @@ window.addEventListener('load', function () {
             if (index >= arraybeat.length) {
                 index = 0;
             }
-        }, 500);
+        },                    500);
     }
 
-//Beat löschen
+    //Beat löschen
     function stoppButton() {
         clearInterval(beatInt);
     }

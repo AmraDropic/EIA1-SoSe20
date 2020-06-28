@@ -1,6 +1,6 @@
 "use strict";
 //Inspiriert von Coleen und Jasmin
-window.addEventListener('load', function () {
+window.addEventListener("load", function () {
     document.querySelector("#first").addEventListener("click", function () { playSample("A.mp3"); });
     document.querySelector("#second").addEventListener("click", function () { playSample("C.mp3"); });
     document.querySelector("#third").addEventListener("click", function () { playSample("F.mp3"); });
