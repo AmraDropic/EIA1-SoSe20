@@ -1,51 +1,47 @@
+let task: string[] = ["gym", "work", "study"];
 
-let task: string[] = ["work", "study", "exercise"];
+window.addEventListener("load", function () {
+    var trash: HTMLElement = document.querySelector(".fa-trash-alt");
 
 
+    var todos: HTMLElement = document.querySelector(".addtolist");
 
-window.addEventListener("load", function() {
-    
-    let trash: HTMLElement = document.querySelector (".fa-trash-alt");
-    let todo: HTMLElement = document.querySelector ("#todo");
+    todolist();
 
-    alltasks();
-
-    let input: HTMLInputElement = document.querySelector("#input");
+    var input: HTMLInputElement = document.querySelector("#input");
     console.log(input);
-    let button: HTMLElement = document.querySelector("#add");
+    var button: HTMLElement = document.querySelector("#btn");
 
     button.addEventListener("click", function () {
         task.push(input.value);
-        alltasks();
+        todolist();
         input.value = "";
         console.log(task);
     });
 
 
-    function alltasks(): void {
-
-        todo.innerHTML = "";
-    
+    function todolist(): void {
+        todos.innerHTML = "";
         for (var index = 0; index < task.length; index++) {
-            todo.innerHTML += "<div>" + "<input type='checkbox'>"  + task[index] + "<i class='fas fa-trash-alt'id=delete></i>" +  "</div>";
-                     }
-    
-    
-        var taskInTotal: HTMLLIElement = document.querySelector("#anzahl");
-        anzahl.innerHTML = task.length;
+            todos.innerHTML += "<div>" + "<input type='checkbox'>"  + task[index] + "<i class='fas fa-trash-alt'></i>" +  "</div>";
+        }
+
+        let deletetask: HTMLElement = document.getElementsByClassName("fas fa-trash-alt");
+        let i;
+        for (i = 0; i < deletetask.length; i++) {
+        deletetask[i].onclick = function () {
+        let div = this.parentElement;
+        div.style.display = "none";
+    };
+
+        var total: HTMLElement = document.querySelector("#total");
+        total.innerHTML = task.length;
     }
-});
+    });
+
 
 
 //mit Hilfe von Moritz
-
-
-
-
-
-
-
-
 
 
 

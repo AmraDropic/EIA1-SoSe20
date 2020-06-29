@@ -1,25 +1,33 @@
 "use strict";
-let task = ["work", "study", "exercise"];
+let task = ["gym", "work", "study"];
 window.addEventListener("load", function () {
-    let trash = document.querySelector(".fa-trash-alt");
-    let todo = document.querySelector("#todo");
-    alltasks();
-    let input = document.querySelector("#input");
+    var trash = document.querySelector(".fa-trash-alt");
+    var todos = document.querySelector(".addtolist");
+    todolist();
+    var input = document.querySelector("#input");
     console.log(input);
-    let button = document.querySelector("#add");
+    var button = document.querySelector("#btn");
     button.addEventListener("click", function () {
         task.push(input.value);
-        alltasks();
+        todolist();
         input.value = "";
         console.log(task);
     });
-    function alltasks() {
-        todo.innerHTML = "";
+    function todolist() {
+        todos.innerHTML = "";
         for (var index = 0; index < task.length; index++) {
-            todo.innerHTML += "<div>" + "<input type='checkbox'>" + task[index] + "<i class='fas fa-trash-alt'id=delete></i>" + "</div>";
+            todos.innerHTML += "<div>" + "<input type='checkbox'>" + task[index] + "<i class='fas fa-trash-alt'></i>" + "</div>";
         }
-        var taskInTotal = document.querySelector("#anzahl");
-        anzahl.innerHTML = task.length;
+        let deletetask = document.getElementsByClassName("fas fa-trash-alt");
+        let i;
+        for (i = 0; i < deletetask.length; i++) {
+            deletetask[i].onclick = function () {
+                let div = this.parentElement;
+                div.style.display = "none";
+            };
+            var total = document.querySelector("#total");
+            total.innerHTML = task.length;
+        }
     }
 });
 //mit Hilfe von Moritz
