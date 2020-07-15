@@ -40,6 +40,7 @@ var todoliste: Todolisteintrag [] = [
  */
 var inputDOMElement: HTMLInputElement;
 var addBtnDOMElement: HTMLElement;
+var recordButtonDOMElement: HTMLElement;
 var todosDOMElement: HTMLElement;
 var counterDOMElement: HTMLElement;
 var doneDOMElement: HTMLElement;
@@ -57,6 +58,7 @@ window.addEventListener("load", function(): void {
      */
     inputDOMElement = document.querySelector("#inputTodo");
     addBtnDOMElement = document.querySelector("#addBtn");
+    recordButtonDOMElement = document.querySelector("#record");
     todosDOMElement = document.querySelector("#todos");
     counterDOMElement = document.querySelector("#counter");
     doneDOMElement = document.querySelector("#done");
@@ -67,11 +69,47 @@ window.addEventListener("load", function(): void {
      * auf den AddToDo Button gesetzt werden.
      */
     addBtnDOMElement.addEventListener("click", addTodo);
+    recordButtonDOMElement.addEventListener("click", record);
 
     /**
      * Initial soll einmal die Liste an bereit definierten ToDos
      * aus den Arrays in den DOM gezeichnet werden.
      */
+
+    
+    function record(): void {
+        const artyom: any = new Artyom();
+        artyom.addCommands({
+            indexes: ["erstelle Aufgabe *"],
+            smart: true,
+            action: function(i : any, wildcard: string): void {
+                inputDOMElement.value = wildcard;      
+              }
+        });
+
+        function startContinuousArtyom(): void {
+            artyom.fatality();
+        
+            setTimeout(
+                function(): void {
+                    artyom.initialize({
+                        lang: "de-DE",
+                        continuous: true,
+                        listen: true,
+                        interimResults: true,
+                        debug: true
+                    }).then(function(): void {
+                        console.log("Ready!");
+                    });
+                }, 
+                300);
+        }
+        if (inputDOMElement.value == "") {
+        startContinuousArtyom();
+        }
+    }
+    
+    
     drawListToDOM();
 });
 

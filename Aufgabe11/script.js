@@ -35,6 +35,7 @@ var todoliste = [
  */
 var inputDOMElement;
 var addBtnDOMElement;
+var recordButtonDOMElement;
 var todosDOMElement;
 var counterDOMElement;
 var doneDOMElement;
@@ -51,6 +52,7 @@ window.addEventListener("load", function () {
      */
     inputDOMElement = document.querySelector("#inputTodo");
     addBtnDOMElement = document.querySelector("#addBtn");
+    recordButtonDOMElement = document.querySelector("#record");
     todosDOMElement = document.querySelector("#todos");
     counterDOMElement = document.querySelector("#counter");
     doneDOMElement = document.querySelector("#done");
@@ -60,10 +62,38 @@ window.addEventListener("load", function () {
      * auf den AddToDo Button gesetzt werden.
      */
     addBtnDOMElement.addEventListener("click", addTodo);
+    recordButtonDOMElement.addEventListener("click", record);
     /**
      * Initial soll einmal die Liste an bereit definierten ToDos
      * aus den Arrays in den DOM gezeichnet werden.
      */
+    function record() {
+        const artyom = new Artyom();
+        artyom.addCommands({
+            indexes: ["erstelle Aufgabe *"],
+            smart: true,
+            action: function (i, wildcard) {
+                inputDOMElement.value = wildcard;
+            }
+        });
+        function startContinuousArtyom() {
+            artyom.fatality();
+            setTimeout(function () {
+                artyom.initialize({
+                    lang: "de-DE",
+                    continuous: true,
+                    listen: true,
+                    interimResults: true,
+                    debug: true
+                }).then(function () {
+                    console.log("Ready!");
+                });
+            }, 300);
+        }
+        if (inputDOMElement.value == "") {
+            startContinuousArtyom();
+        }
+    }
     drawListToDOM();
 });
 function drawListToDOM() {
